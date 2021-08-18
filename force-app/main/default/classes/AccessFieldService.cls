@@ -24,6 +24,7 @@ public class AccessFieldService {
 
 		for(SObject record : sObjectRecords) {
 			for(String field : fields) {
+                //Using the below code we can get the field values dynamically.
 				System.debug('Field Name : ' + field + '; Field Value :  ' + getFieldValue(record, field));
 			}
 		}
